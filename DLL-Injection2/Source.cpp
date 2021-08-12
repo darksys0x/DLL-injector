@@ -2,6 +2,22 @@
 #include <Windows.h>
 
 
+
+
+
+/* 53 56 57 8D BD 40 FF FF FF B9 30 00 00 00 B8 CC CC CC CC F3 AB
+
+
+
+.text:00411BF9 53                         push    ebx
+.text:00411BFA 56                         push    esi
+.text:00411BFB 56                         push    edi
+.text:00411BFC 89 BD 40 FF FF FF          lea     edi, [ebp+var_C0]
+.text:00411C02 B9 30 00 00 00             mov     ecx, 30h
+.text:00411C07 B8 CC CC CC CC             mov     eax, 0CCCCCCCCh
+.text:00411C0C F3 AB                      rep stosd
+.text:00411C0E B9 27 C0 41 00             mov     ecx, offset unk_41C027
+*/
 int main()
 {
 	DWORD processID = 17816;
